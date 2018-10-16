@@ -12,8 +12,9 @@
 (sml/setup)
 
 ;; Font options
+;; https://github.com/be5invis/Iosevka
 (add-to-list 'default-frame-alist
-	     '(font . "Ubuntu Mono-12"))
+	     '(font . "Iosevka SS04-12"))
 
 ;; Highlight matching parentheses
 (show-paren-mode t)
