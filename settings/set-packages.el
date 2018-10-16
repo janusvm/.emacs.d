@@ -14,6 +14,7 @@
 
 
 (package-initialize)
+(setq package-enable-at-startup nil)
 
 (unless package-archive-contents
   (package-refresh-contents))

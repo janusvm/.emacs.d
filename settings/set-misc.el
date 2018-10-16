@@ -24,6 +24,10 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; Enable inputting unicode symbols with TeX commands
+;; toggle with C-\
+(setq default-input-method 'TeX)
+
 ;; Show keystrokes in minibuffer faster
 (setq echo-keystrokes 0.1)
 

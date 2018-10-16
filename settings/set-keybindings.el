@@ -22,4 +22,7 @@
 ;; Keybindings for magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; Custom functions
+(global-set-key (kbd "C-x C-M-f") 'find-file-on-clipboard)
+
 (provide 'set-keybindings)
