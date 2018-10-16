@@ -26,6 +26,7 @@
 	avy
 	company
 	counsel
+	exec-path-from-shell
 	ess
 	ess-R-data-view
 	expand-region
@@ -40,6 +41,7 @@
 	projectile
 	smart-mode-line
 	sql-indent
+	yasnippet
 	))
 
 (dolist (package packages-list)
