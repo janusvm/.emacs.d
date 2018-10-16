@@ -1,4 +1,4 @@
-;; appearance.el : visual settings
+;; set-appearance.el : visual settings
 ;; -----------------------------------------------------------------------------
 
 ;; Load theme
@@ -35,4 +35,4 @@
   (setq frame-title-format '(buffer-file-name "%f" ("%b")))
   (blink-cursor-mode nil))
 
-(provide 'appearance)
+(provide 'set-appearance)

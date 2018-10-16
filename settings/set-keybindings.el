@@ -1,8 +1,14 @@
-;; keybindings.el : custom keybindings
+;; set-keybindings.el : custom keybindings
 ;; -----------------------------------------------------------------------------
 
-;; Unset to avoid accidentally minimizing
+;; Unset default keys to avoid accidentally closing Emacs
+;; Use C-x r q instead (mnemonic: really quit)
 (global-unset-key (kbd "C-z"))
+(global-unset-key (kbd "C-x C-c"))
+(global-set-key (kbd "C-x r q") 'save-buffers-kill-terminal)
+
+;; Use ibuffer instead of list-buffers
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; Keybindings for multiple-cursors
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
@@ -16,4 +22,4 @@
 ;; Keybindings for magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
-(provide 'keybindings)
+(provide 'set-keybindings)

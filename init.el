@@ -21,21 +21,19 @@
 (load custom-file)
 
 ;; Set up packages
-(require 'setup-package)
+(require 'set-packages)
 
 ;; Set up appearance
-(require 'appearance)
+(require 'set-appearance)
 
-;; Set up defaults
-(require 'defaults)
+;; Load configurations from set files
+(require 'set-misc)
+(require 'set-dired)
 
-;; Load configurations from setup files
-(require 'setup-dired)
-
-;; Load packages that don't have their own setup file
+;; Load packages that don't have their own set file
 (require 'expand-region)
 (require 'magit)
 (require 'multiple-cursors)
 
 ;; Set up keybindings
-(require 'keybindings)
+(require 'set-keybindings)

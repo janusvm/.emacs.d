@@ -1,4 +1,4 @@
-;; setup-dired.el : settings related to dired
+;; set-dired.el : settings related to dired
 ;; -----------------------------------------------------------------------------
 
 ;; Copy/move between dired windows
@@ -7,4 +7,4 @@
 ;; Use a button for opening file/folder in same buffer
 (put 'dired-find-alternate-file 'disabled nil)
 
-(provide 'setup-dired)
+(provide 'set-dired)

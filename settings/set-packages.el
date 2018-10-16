@@ -1,4 +1,4 @@
-;; setup-package.el : initialize packages
+;; set-packages.el : initialize packages
 ;; -----------------------------------------------------------------------------
 
 (require 'package)
@@ -48,4 +48,4 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-(provide 'setup-package)
+(provide 'set-packages)

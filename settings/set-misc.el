@@ -1,4 +1,4 @@
-;; defaults.el : better default settings
+;; set-misc.el : miscellaneous settings
 ;; -----------------------------------------------------------------------------
 
 ;; Auto refresh buffers after external changes til file
@@ -52,4 +52,4 @@
 ;; Allow editing of compressed files
 (auto-compression-mode t)
 
-(provide 'defaults)
+(provide 'set-misc)
