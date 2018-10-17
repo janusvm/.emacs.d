@@ -17,6 +17,10 @@
 (add-to-list 'default-frame-alist
 	     '(font . "Iosevka SS04-12"))
 
+;; Icons
+(setq neo-theme 'icons)
+(all-the-icons-ivy-setup)
+
 ;; Highlight matching parentheses
 (show-paren-mode t)
 (setq show-paren-delay 0)

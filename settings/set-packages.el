@@ -22,6 +22,8 @@
 ;; List of packages to be automatically installed on a fresh Emacs
 (setq packages-list
       '(
+        all-the-icons
+        all-the-icons-ivy
 	auctex
 	auctex-latexmk
 	avy
