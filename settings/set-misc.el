@@ -11,9 +11,11 @@
       make-backup-files nil
       auto-save-default nil)
 
-;; I don't use abbrevs
-(setq-default abbrev-mode nil)
-(setq save-abbrevs nil)
+;;; Abbrevs
+(setq save-abbrevs 'silently)
+(setq abbrev-file-name (locate-user-emacs-file "abbrev_defs"))
+(unless (file-exists-p abbrev-file-name)
+  (with-temp-buffer (write-file abbrev-file-name))
 
 ;; Use y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)
