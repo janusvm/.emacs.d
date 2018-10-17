@@ -11,4 +11,7 @@ If you want to clone this for immediate use as-is, be aware of the following:
 
 - The config is made for my Ubuntu machine, and I don't know if it works on Windows
 - The default font is set to _Iosevka SS04 Regular_ (see [be5invis/iosevka](https://github.com/be5invis/Iosevka)) in `settings/set-appearance.el`
-- Packages are automatically installed on first run from (in order of priority) Melpa Stable, GNU Elpa, Melpa
+- When running Emacs for the first time after cloning this repo into `~/.emacs.d/`:
+  - Packages are automatically installed from (in order of priority) Melpa Stable, GNU Elpa, Melpa
+  - A pop-up about abbrevs will pause the process, and I have no idea how to get rid of it (but I suspect that `ess` is the culprit)
+  - Several warnings about the byte compilation of packages will be displayed
