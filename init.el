@@ -30,6 +30,7 @@
 (require 'set-appearance)
 (require 'set-misc)
 (require 'set-editing)
+(require 'set-compile)
 (require 'set-navigation)
 (require 'set-company)
 (require 'set-dired)
