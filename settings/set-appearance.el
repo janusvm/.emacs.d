@@ -17,7 +17,8 @@
 (add-to-list 'default-frame-alist
 	     '(font . "Iosevka SS04-12"))
 
-;; Icons
+;; Icons and Neotree
+(setq neo-autorefresh nil)
 (setq neo-theme 'icons)
 (all-the-icons-ivy-setup)
 
