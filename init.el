@@ -23,6 +23,7 @@
 (load custom-file)
 
 ;; Set up packages before loading their settings
+;; (package-initialize)  <-- necessary comment to appease package.el
 (require 'set-packages)
 
 ;; Load configurations from settings files
