@@ -22,8 +22,10 @@
 (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
-;; Avy
-(global-set-key (kbd "C-c C-j") 'avy-resume)
+;; Avy keybindings
+(global-set-key (kbd "C-.") 'avy-pop-mark)
+(global-set-key (kbd "C-:") 'avy-goto-char)
+(global-set-key (kbd "C-'") 'avy-goto-word-1)
 
 ;; Projectile and friends
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)

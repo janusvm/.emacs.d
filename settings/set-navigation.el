@@ -14,8 +14,8 @@
 ;; Use Counsel for projectile
 (counsel-projectile-mode t)
 
-;; Use Avy to jump to stuff
-(avy-setup-default)
+;; Use Avy to jump to stuff *everywhere*
+(setq avy-all-windows 'all-frames)
 
 ;; Configure ibuffer-projectile
 (add-hook 'ibuffer-hook
