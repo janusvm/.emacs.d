@@ -33,6 +33,7 @@
 	ess-R-data-view
 	expand-region
 	haskell-mode
+	ibuffer-projectile
 	lispy
 	magit
 	markdown-mode
