@@ -2,9 +2,9 @@
 ;; -----------------------------------------------------------------------------
 
 ;; Disable visual interfaces early
-(if (fboundp 'menu-bar-mode) (menu-bar-mode nil))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode nil))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode nil))
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 
 ;; Disable splash screen
 (setq inhibit-startup-message t)
@@ -37,6 +37,7 @@
 (require 'set-R)
 (require 'set-latex)
 (require 'set-org)
+(require 'set-sql)
 
 ;; Load external, non-(m)elpa code
 (require 'transpose-frame)
