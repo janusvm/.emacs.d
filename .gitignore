@@ -52,6 +52,7 @@ flycheck_*.el
 # End of https://www.gitignore.io/api/emacs
 
 # Misc config files
+projectile-bookmarks.eld
 bookmarks
 abbrev_defs
 recentf
