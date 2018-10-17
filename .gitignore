@@ -54,3 +54,4 @@ flycheck_*.el
 # Misc config files
 bookmarks
 abbrev_defs
+recentf
