@@ -3,12 +3,30 @@
 
 ;; Unset default keys to avoid accidentally closing Emacs
 ;; Use C-x r q instead (mnemonic: really quit)
-(global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-c"))
 (global-set-key (kbd "C-x r q") 'save-buffers-kill-terminal)
 
+;; Rebind C-z to undo
+(global-set-key (kbd "C-z") 'undo)
+
 ;; Use ibuffer instead of list-buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+
+;; Put that menu key on the laptop to good use
+(global-set-key (kbd "<menu>") 'execute-extended-command)
+
+;; Keybindings for Ivy, Swiper, and Counsel
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+(define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+
+;; Avy
+(global-set-key (kbd "C-c C-j") 'avy-resume)
+
+;; Projectile and friends
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 ;; Keybindings for multiple-cursors
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)

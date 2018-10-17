@@ -27,6 +27,7 @@
 	avy
 	company
 	counsel
+	counsel-projectile
 	exec-path-from-shell
 	ess
 	ess-R-data-view

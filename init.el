@@ -29,10 +29,14 @@
 (require 'set-appearance)
 (require 'set-misc)
 (require 'set-editing)
+(require 'set-navigation)
 (require 'set-company)
 (require 'set-dired)
+(require 'set-lisp)
 (require 'set-haskell)
 (require 'set-R)
+(require 'set-latex)
+(require 'set-org)
 
 ;; Load external, non-(m)elpa code
 (require 'transpose-frame)
