@@ -44,7 +44,8 @@
 	projectile
 	smart-mode-line
 	sql-indent
-	yasnippet
+        yaml-mode
+        yasnippet
 	))
 
 (dolist (package packages-list)
