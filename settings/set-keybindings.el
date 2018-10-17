@@ -22,6 +22,9 @@
 (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
+;; NeoTree
+(global-set-key (kbd "<f8>") 'neotree-toggle)
+
 ;; Avy keybindings
 (global-set-key (kbd "C-.") 'avy-pop-mark)
 (global-set-key (kbd "C-:") 'avy-goto-char)

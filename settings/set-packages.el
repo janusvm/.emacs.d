@@ -38,7 +38,8 @@
 	magit
 	markdown-mode
 	multiple-cursors
-	nord-theme
+        neotree
+        nord-theme
 	poly-R
 	poly-markdown
 	projectile

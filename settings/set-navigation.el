@@ -14,6 +14,9 @@
 ;; Use Counsel for projectile
 (counsel-projectile-mode t)
 
+;; Make neotree change with projectile
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
 ;; Use Avy to jump to stuff *everywhere*
 (setq avy-all-windows 'all-frames)
 
