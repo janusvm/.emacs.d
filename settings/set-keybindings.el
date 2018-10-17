@@ -40,6 +40,13 @@
 ;; Keybindings for magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; Join lines into oneliner
+;; http://whattheemacsd.com/key-bindings.el-03.html
+(global-set-key (kbd "M-j")
+		(lambda ()
+		  (interactive)
+		  (join-line -1)))
+
 ;; Custom functions
 (global-set-key (kbd "C-x C-M-f") 'find-file-on-clipboard)
 

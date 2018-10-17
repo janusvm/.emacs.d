@@ -11,6 +11,10 @@
       make-backup-files nil
       auto-save-default nil)
 
+;; I don't use abbrevs
+(setq-default abbrev-mode nil)
+(setq save-abbrevs nil)
+
 ;; Use y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)
 

@@ -8,7 +8,8 @@
 (line-number-mode t)
 (column-number-mode t)
 (display-battery-mode t)
-(setq sml/theme 'respectful)
+(setq sml/theme 'respectful
+      sml/no-confirm-load-theme t)
 (sml/setup)
 
 ;; Font options
