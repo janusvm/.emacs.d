@@ -28,6 +28,7 @@
 (global-set-key (kbd "C-:") 'avy-goto-char)
 (global-set-key (kbd "C-'") 'avy-goto-word-1)
 (global-set-key (kbd "C-_") 'avy-goto-line)
+(global-set-key (kbd "C-¨") 'ace-window)
 
 ;; Projectile and friends
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
