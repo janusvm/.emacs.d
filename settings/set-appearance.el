@@ -27,9 +27,6 @@
 (show-paren-mode t)
 (setq show-paren-delay 0)
 
-;; Don't blink cursor
-(blink-cursor-mode -1)
-
 ;; Highlight current line
 (global-hl-line-mode t)
 
@@ -43,6 +40,6 @@
 ;; Set a better system window name and don't blink the cursor
 (when window-system
   (setq frame-title-format '(buffer-file-name "%f" ("%b")))
-  (blink-cursor-mode nil))
+  (blink-cursor-mode -1))
 
 (provide 'set-appearance)
