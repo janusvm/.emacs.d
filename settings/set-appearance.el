@@ -20,7 +20,6 @@
 ;; Icons and Neotree
 (setq neo-autorefresh nil)
 (setq neo-theme 'icons)
-(all-the-icons-ivy-setup)
 
 ;; Highlight matching parentheses
 (show-paren-mode t)

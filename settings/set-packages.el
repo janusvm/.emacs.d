@@ -23,8 +23,7 @@
 (setq packages-list
       '(
         all-the-icons
-        all-the-icons-ivy
-	auctex
+        auctex
 	auctex-latexmk
 	avy
 	company
@@ -45,7 +44,7 @@
 	poly-R
 	poly-markdown
 	projectile
-	smart-mode-line
+        smart-mode-line
 	sql-indent
         yaml-mode
         yasnippet
