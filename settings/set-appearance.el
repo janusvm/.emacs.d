@@ -5,6 +5,7 @@
 (load-theme 'nord t)
 
 ;; Mode line setup
+(fancy-battery-mode t)
 (spaceline-all-the-icons-theme)
 (spaceline-all-the-icons--setup-git-ahead)
 (spaceline-all-the-icons--setup-neotree)

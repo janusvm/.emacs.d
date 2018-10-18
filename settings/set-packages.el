@@ -33,6 +33,7 @@
 	ess
 	ess-R-data-view
 	expand-region
+        fancy-battery
 	haskell-mode
 	ibuffer-projectile
 	lispy
