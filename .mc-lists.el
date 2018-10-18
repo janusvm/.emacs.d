@@ -9,6 +9,7 @@
         lispy-delete-backward
         lispy-kill
         lispy-kill-at-point
+        lispy-kill-word
         lispy-parens
         lispy-quotes
         special-digit-argument

@@ -32,8 +32,8 @@
 (setq visible-bell nil)
 (setq ring-bell-function
       (lambda ()
-	(invert-face 'mode-line)
-	(run-with-timer 0.1 nil 'invert-face 'mode-line)))
+	(invert-face 'powerline-active2)
+	(run-with-timer 0.1 nil 'invert-face 'powerline-active2)))
 
 ;; Set a better system window name and don't blink the cursor
 (when window-system
