@@ -21,6 +21,7 @@
 ;; Icons and Neotree
 (setq neo-autorefresh nil)
 (setq neo-theme 'icons)
+(setq neo-window-width 35)
 
 ;; Highlight matching parentheses
 (show-paren-mode t)
