@@ -5,12 +5,10 @@
 (load-theme 'nord t)
 
 ;; Mode line setup
-(line-number-mode t)
-(column-number-mode t)
-(display-battery-mode t)
-(setq sml/theme 'respectful
-      sml/no-confirm-load-theme t)
-(sml/setup)
+(spaceline-all-the-icons-theme)
+(spaceline-all-the-icons--setup-git-ahead)
+(spaceline-all-the-icons--setup-neotree)
+(set-face-attribute 'spaceline-highlight-face nil :background "#5E81AC")
 
 ;; Font options
 ;; https://github.com/be5invis/Iosevka
