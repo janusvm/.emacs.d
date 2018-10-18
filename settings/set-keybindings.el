@@ -17,18 +17,17 @@
 
 ;; Keybindings for Ivy, Swiper, and Counsel
 (global-set-key "\C-s" 'swiper)
-(global-set-key (kbd "C-c C-r") 'ivy-resume)
-(global-set-key (kbd "<f6>") 'ivy-resume)
 (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 ;; NeoTree
-(global-set-key (kbd "<f8>") 'neotree-toggle)
+(global-set-key (kbd "<f8>") 'neotree-projectile-action)
 
 ;; Avy keybindings
 (global-set-key (kbd "C-.") 'avy-pop-mark)
 (global-set-key (kbd "C-:") 'avy-goto-char)
 (global-set-key (kbd "C-'") 'avy-goto-word-1)
+(global-set-key (kbd "C-_") 'avy-goto-line)
 
 ;; Projectile and friends
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)

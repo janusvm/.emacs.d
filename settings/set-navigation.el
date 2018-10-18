@@ -10,6 +10,7 @@
 
 ;; Use Projectile for projects
 (projectile-global-mode t)
+(setq projectile-completion-system 'ivy)
 
 ;; Use Counsel for projectile
 (counsel-projectile-mode t)

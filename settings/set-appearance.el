@@ -14,8 +14,9 @@
 
 ;; Font options
 ;; https://github.com/be5invis/Iosevka
-(add-to-list 'default-frame-alist
-	     '(font . "Iosevka SS04-12"))
+(set-face-attribute 'default nil
+                    :family "Iosevka SS04"
+                    :height 120)
 
 ;; Icons and Neotree
 (setq neo-autorefresh nil)
@@ -24,6 +25,9 @@
 ;; Highlight matching parentheses
 (show-paren-mode t)
 (setq show-paren-delay 0)
+
+;; Don't blink cursor
+(blink-cursor-mode -1)
 
 ;; Highlight current line
 (global-hl-line-mode t)
