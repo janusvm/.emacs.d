@@ -44,7 +44,8 @@
 	poly-R
 	poly-markdown
 	projectile
-        smart-mode-line
+        spaceline
+        spaceline-all-the-icons
 	sql-indent
         yaml-mode
         yasnippet
