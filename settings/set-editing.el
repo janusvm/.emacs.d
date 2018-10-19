@@ -9,4 +9,7 @@
 (setq delete-trailing-lines t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; yasnippet
+(yas-global-mode t)
+
 (provide 'set-editing)

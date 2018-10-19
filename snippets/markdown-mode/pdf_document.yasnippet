@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: pdf_document
+# key: pdf
+# --
+---
+title: "$1"
+author: "Janus Valberg-Madsen"
+output: pdf_document
+fontsize: 12pt
+urlcolor: red
+header-includes:
+  - \\usepackage{fourier}
+  - \\usepackage{inconsolata}
+---
+
+\`\`\`{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  fig.align = "center"
+)
+\`\`\`
+
+$0
