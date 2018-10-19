@@ -52,6 +52,17 @@
 		  (interactive)
 		  (join-line -1)))
 
+;; ESS/R and Markdown bindings
+(define-key ess-mode-map (kbd "M--")  'my/R-assign-op)
+(define-key inferior-ess-mode-map (kbd "M--")  'my/R-assign-op)
+(define-key ess-mode-map (kbd "C-S-m") 'my/R-pipe-op)
+(define-key inferior-ess-mode-map (kbd "C-S-m") 'my/R-pipe-op)
+(define-key ess-mode-map (kbd "<backtab>") 'company-complete-common)
+(define-key inferior-ess-mode-map (kbd "<backtab>") 'company-complete-common)
+(define-key poly-markdown+R-mode-map (kbd "<backtab>") 'company-complete-common)
+
+
+
 ;; Custom functions
 (global-set-key (kbd "C-x C-M-f") 'find-file-on-clipboard)
 
