@@ -42,7 +42,8 @@
 	multiple-cursors
         neotree
         nord-theme
-	poly-R
+        pdf-tools
+        poly-R
 	poly-markdown
 	projectile
         spaceline

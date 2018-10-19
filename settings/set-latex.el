@@ -32,4 +32,9 @@
 (add-hook 'LaTeX-mode-hook
 	  (lambda () (setq TeX-command-default "Make")))
 
+;; PDF settings
+(setq TeX-view-program-selection '((output-pdf . "PDF Tools")))
+(TeX-source-correlate-mode t)
+(add-hook 'TeX-after-compilation-finished-functions #'TeX-revert-document-buffer)
+
 (provide 'set-latex)

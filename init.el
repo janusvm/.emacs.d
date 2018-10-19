@@ -26,6 +26,9 @@
 ;; (package-initialize)  <-- necessary comment to appease package.el
 (require 'set-packages)
 
+;; Install pdf-tools dependencies
+(pdf-tools-install)
+
 ;; Load configurations from settings files
 (require 'set-appearance)
 (require 'set-misc)
@@ -50,3 +53,6 @@
 
 ;; Set up keybindings
 (require 'set-keybindings)
+
+;; Run daemon
+(server-start)

@@ -50,5 +50,7 @@
 (add-to-list 'auto-mode-alist '("\\.md" . poly-markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
 
+;; Prefer pdf-tools for viewing PDFs
+(setq ess-pdf-viewer-pref "emacsclient")
 
 (provide 'set-R)
