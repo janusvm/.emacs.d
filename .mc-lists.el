@@ -3,6 +3,8 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        LaTeX-babel-insert-hyphen
+        kill-region
         lispy-braces
         lispy-brackets
         lispy-delete
