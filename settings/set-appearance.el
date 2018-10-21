@@ -1,8 +1,16 @@
 ;; set-appearance.el : visual settings
 ;; -----------------------------------------------------------------------------
 
+;; Highlight matching parentheses
+(show-paren-mode t)
+(setq show-paren-delay 0)
+
 ;; Load theme
 (load-theme 'nord t)
+
+;; Customize selection colours
+(set-cursor-color "#bf616a")
+(set-face-attribute 'region nil :background "#ebcb8b")
 
 ;; Mode line setup
 (fancy-battery-mode t)
@@ -10,6 +18,9 @@
 (spaceline-all-the-icons--setup-git-ahead)
 (spaceline-all-the-icons--setup-neotree)
 (set-face-attribute 'spaceline-highlight-face nil :background "#5E81AC")
+
+;; Rainbow delimiters in programming modes
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;; Font options
 ;; https://github.com/be5invis/Iosevka
@@ -21,13 +32,6 @@
 (setq neo-autorefresh nil)
 (setq neo-theme 'icons)
 (setq neo-window-width 35)
-
-;; Highlight matching parentheses
-(show-paren-mode t)
-(setq show-paren-delay 0)
-
-;; Highlight current line
-(global-hl-line-mode t)
 
 ;; Blink modeline instead of beeping
 (setq visible-bell nil)

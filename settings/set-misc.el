@@ -44,8 +44,9 @@
 ;; Move files to Rubbish Bin when deleting
 (setq delete-by-moving-to-trash t)
 
-;; Don't break lines
-(setq-default truncate-lines t)
+;; Wrap lines at words
+(setq-default truncate-lines nil)
+(setq-default word-wrap t)
 
 ;; Don't insert tabs by default
 (setq-default indent-tabs-mode nil)

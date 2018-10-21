@@ -1,6 +1,9 @@
 ;; set-compile.el : general compilation settings
 ;; -----------------------------------------------------------------------------
 
+;; Scroll compilation output as it renders
+(setq compilation-scroll-output t)
+
 ;; Hook for checking the number of open windows in frame prior to compilation.
 ;; If there is more than 1 window when ignoring NeoTree, set a variable to
 ;; indicate that the window should be deleted.

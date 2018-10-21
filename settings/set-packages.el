@@ -47,6 +47,7 @@
         poly-R
 	poly-markdown
 	projectile
+        rainbow-delimiters
         spaceline
         spaceline-all-the-icons
 	sql-indent
