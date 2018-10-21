@@ -22,6 +22,7 @@
 ;; List of packages to be automatically installed on a fresh Emacs
 (setq packages-list
       '(
+        ag
         all-the-icons
         auctex
 	auctex-latexmk
