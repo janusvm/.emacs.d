@@ -51,6 +51,7 @@
         spaceline
         spaceline-all-the-icons
 	sql-indent
+        wgrep
         yaml-mode
         yasnippet
 	))

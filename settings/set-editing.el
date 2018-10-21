@@ -12,4 +12,7 @@
 ;; yasnippet
 (yas-global-mode t)
 
+;; Save files after wgrep'ing
+(setq wgrep-auto-save-buffer t)
+
 (provide 'set-editing)
