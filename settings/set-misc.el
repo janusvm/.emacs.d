@@ -61,4 +61,7 @@
 ;; Allow editing of compressed files
 (auto-compression-mode t)
 
+;; Set re-builder's syntax to the one other, interactive regexes use
+(setq reb-re-syntax 'string)
+
 (provide 'set-misc)

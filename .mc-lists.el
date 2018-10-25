@@ -4,6 +4,8 @@
 (setq mc/cmds-to-run-for-all
       '(
         LaTeX-babel-insert-hyphen
+        archive-mark
+        ivy-occur-delete-candidate
         kill-region
         lispy-braces
         lispy-brackets
@@ -93,6 +95,8 @@
 (setq mc/cmds-to-run-once
       '(
         iedit-switch-to-mc-mode
+        ivy-done
         lispy-cursor-down
         special-lispy-other-mode
+        swiper-mc
         ))
