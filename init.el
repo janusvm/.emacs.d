@@ -39,10 +39,12 @@
 (require 'set-dired)
 (require 'set-lisp)
 (require 'set-haskell)
+(require 'set-python)
 (require 'set-R)
 (require 'set-latex)
 (require 'set-org)
 (require 'set-sql)
+(require 'set-misc-prog)
 
 ;; Load external, non-(m)elpa code
 (require 'transpose-frame)

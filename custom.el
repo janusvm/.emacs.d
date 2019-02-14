@@ -7,7 +7,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (rainbow-mode toml-mode wgrep rainbow-delimiters ag pdf-tools fancy-battery spaceline spaceline-all-the-icons all-the-icons neotree yaml-mode yasnippet sql-indent poly-R nord-theme markdown-mode magit lispy ibuffer-projectile haskell-mode expand-region ess-R-data-view ess exec-path-from-shell counsel-projectile counsel company avy auctex-latexmk auctex))))
+    (geiser org-bullets j-mode poly-noweb poly-markdown polymode elpy rainbow-mode toml-mode wgrep rainbow-delimiters ag pdf-tools fancy-battery spaceline spaceline-all-the-icons all-the-icons neotree yaml-mode yasnippet sql-indent poly-R nord-theme markdown-mode magit lispy ibuffer-projectile haskell-mode expand-region ess-R-data-view ess exec-path-from-shell counsel-projectile counsel company avy auctex-latexmk auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

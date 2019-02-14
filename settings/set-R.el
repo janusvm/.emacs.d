@@ -6,8 +6,12 @@
 ;; Enable electric delimiters
 (add-hook 'ess-mode-hook '(lambda () (electric-pair-mode t)))
 
-;; Use company for completions
+;; Use company for completions (only with S-TAB)
 (setq ess-use-company t)
+(setq ess-tab-complete-in-script nil)
+
+;; Use Counsel for narrowing
+(setq ess-use-ido nil)
 
 ;; Indentation mode
 (setq ess-default-style 'RStudio)

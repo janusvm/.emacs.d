@@ -10,14 +10,20 @@
 
 ;; Customize selection colours
 (set-cursor-color "#bf616a")
-(set-face-attribute 'region nil :background "#ebcb8b")
+(add-to-list 'default-frame-alist '(cursor-color . "#bf616a"))
+(set-face-attribute 'region nil
+                    :background "#88c0d0"
+                    :foreground "#2e3440")
+
+;; Colours in pdf-view midnight mode
+(setq pdf-view-midnight-colors '("#e5e9f0" . "#2e3440"))
 
 ;; Mode line setup
 (fancy-battery-mode t)
 (spaceline-all-the-icons-theme)
 (spaceline-all-the-icons--setup-git-ahead)
 (spaceline-all-the-icons--setup-neotree)
-(set-face-attribute 'spaceline-highlight-face nil :background "#5E81AC")
+(set-face-attribute 'spaceline-highlight-face nil :background "#5e81ac")
 
 ;; Rainbow delimiters in programming modes
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
@@ -25,6 +31,9 @@
 ;; Font options
 ;; https://github.com/be5invis/Iosevka
 (set-face-attribute 'default nil
+                    :family "Iosevka SS04"
+                    :height 120)
+(set-face-attribute 'fixed-pitch nil
                     :family "Iosevka SS04"
                     :height 120)
 

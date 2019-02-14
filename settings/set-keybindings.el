@@ -20,6 +20,9 @@
 (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
+;; Don't use Swiper in PDFView
+(define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward)
+
 ;; NeoTree
 (global-set-key (kbd "<f8>") 'neotree-projectile-action)
 
@@ -29,6 +32,9 @@
 (global-set-key (kbd "C-'") 'avy-goto-word-1)
 (global-set-key (kbd "C-_") 'avy-goto-line)
 (global-set-key (kbd "C-¨") 'ace-window)
+
+;; Unset conflicting binding in Org mode
+(define-key org-mode-map (kbd "C-'") nil)
 
 ;; Projectile and friends
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)

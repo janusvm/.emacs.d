@@ -30,19 +30,23 @@
 	company
 	counsel
 	counsel-projectile
+        elpy
 	exec-path-from-shell
 	ess
 	ess-R-data-view
 	expand-region
         fancy-battery
+        geiser
 	haskell-mode
 	ibuffer-projectile
+        j-mode
 	lispy
 	magit
 	markdown-mode
 	multiple-cursors
         neotree
         nord-theme
+        org-bullets
         pdf-tools
         poly-R
 	poly-markdown

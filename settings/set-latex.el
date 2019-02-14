@@ -33,8 +33,9 @@
 	  (lambda () (setq TeX-command-default "Make")))
 
 ;; PDF settings
-(setq TeX-view-program-selection '((output-pdf . "PDF Tools")))
-(TeX-source-correlate-mode t)
+(setq TeX-view-program-selection '((output-pdf "pdf-tools"))
+      TeX-source-correlate-start-server t
+      TeX-view-program-list '(("pdf-tools" "TeX-pdf-tools-sync-view")))
 (add-hook 'TeX-after-compilation-finished-functions #'TeX-revert-document-buffer)
 
 (provide 'set-latex)

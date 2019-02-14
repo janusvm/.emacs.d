@@ -5,6 +5,15 @@
       '(
         LaTeX-babel-insert-hyphen
         archive-mark
+        comment-line
+        comment-set-column
+        copy-to-register
+        electric-pair-delete-pair
+        ess-indent-or-complete
+        ess-smart-comma
+        ess-yank
+        haskell-indentation-common-electric-command
+        indent-for-tab-command
         ivy-occur-delete-candidate
         kill-region
         lispy-braces
@@ -14,8 +23,16 @@
         lispy-kill
         lispy-kill-at-point
         lispy-kill-word
+        lispy-mark-symbol
         lispy-parens
         lispy-quotes
+        lispy-tick
+        markdown-cycle
+        markdown-outdent-or-delete
+        org-delete-char
+        org-end-of-line
+        org-self-insert-command
+        skeleton-pair-insert-maybe
         special-digit-argument
         special-lh-knight/body
         special-lispy-ace-char
@@ -94,9 +111,13 @@
 
 (setq mc/cmds-to-run-once
       '(
+        avy-goto-line
         iedit-switch-to-mc-mode
         ivy-done
         lispy-cursor-down
+        org-cycle
+        query-replace
         special-lispy-other-mode
         swiper-mc
+        wgrep-finish-edit
         ))

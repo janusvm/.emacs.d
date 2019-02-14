@@ -15,4 +15,7 @@
 ;; Save files after wgrep'ing
 (setq wgrep-auto-save-buffer t)
 
+;; Always use electric pairs
+(electric-pair-mode 1)
+
 (provide 'set-editing)

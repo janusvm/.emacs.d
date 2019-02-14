@@ -3,6 +3,8 @@
 
 (require 'org)
 (require 'ox-latex)
+(require 'org-bullets)
+;; (require 'ob-shell)
 
 ;; Customise LaTeX exporting
 (unless (boundp 'org-latex-classes)
@@ -27,7 +29,31 @@
 (add-hook 'org-mode-hook
 	  '(lambda () (local-set-key (kbd "C-c a") 'org-agenda)))
 
+;; Prettify
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+(font-lock-add-keywords 'org-mode
+                        '(("^ *\\([-]\\) "
+                           (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+
+;; Code blocks
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   (emacs-lisp . t)
+   (scheme . t)
+   (R . t)
+   (latex . t)
+   ;;   (ditaa . t)
+   ;;   (calc . t)
+   ;;   (shell . t)
+   ;;   (C . t)
+   (python . t)
+   ))
+
+;; Dont ask for execution
+(setq org-confirm-babel-evaluate nil)
+
 ;; Define key command to toggle line truncation
-(define-key org-mode-map (kbd "M-q") 'toggle-truncate-lines)
+;; (define-key org-mode-map (kbd "M-q") 'toggle-truncate-lines)
 
 (provide 'set-org)
