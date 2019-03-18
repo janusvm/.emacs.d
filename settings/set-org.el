@@ -4,7 +4,6 @@
 (require 'org)
 (require 'ox-latex)
 (require 'org-bullets)
-;; (require 'ob-shell)
 
 ;; Customise LaTeX exporting
 (unless (boundp 'org-latex-classes)
@@ -35,6 +34,14 @@
                         '(("^ *\\([-]\\) "
                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
 
+;; Code evaluation backends
+(require 'ob-R)
+(require 'ob-J)
+(require 'ob-scheme)
+(require 'ob-emacs-lisp)
+(require 'ob-python)
+(require 'ob-latex)
+
 ;; Code blocks
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -42,6 +49,7 @@
    (emacs-lisp . t)
    (scheme . t)
    (R . t)
+   (J . t)
    (latex . t)
    ;;   (ditaa . t)
    ;;   (calc . t)
@@ -49,6 +57,9 @@
    ;;   (C . t)
    (python . t)
    ))
+
+;; My J binary is called ijconsole, not jconsole
+(setq org-babel-J-command "ijconsole")
 
 ;; Dont ask for execution
 (setq org-confirm-babel-evaluate nil)

@@ -5,7 +5,7 @@
 (elpy-enable)
 
 ;; Use iPython
-(setq python-shell-interpreter "ipython"
-      python-shell-interpreter-args "-i --simple-prompt")
+(setq python-shell-interpreter "ipython3"
+      python-shell-interpreter-args "-i --colors=NoColor")
 
 (provide 'set-python)

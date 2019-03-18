@@ -10,6 +10,7 @@
         copy-to-register
         electric-pair-delete-pair
         ess-indent-or-complete
+        ess-smart-S-assign
         ess-smart-comma
         ess-yank
         haskell-indentation-common-electric-command
@@ -18,12 +19,15 @@
         kill-region
         lispy-braces
         lispy-brackets
+        lispy-comment
         lispy-delete
         lispy-delete-backward
         lispy-kill
         lispy-kill-at-point
         lispy-kill-word
         lispy-mark-symbol
+        lispy-move-beginning-of-line
+        lispy-move-end-of-line
         lispy-parens
         lispy-quotes
         lispy-tick
