@@ -1,49 +1,63 @@
 # My Emacs configuration
 
-This repository contains my personal settings for Emacs (version 25.3, running on Ubuntu 16.04).
+This repository contains my personal settings for Emacs (version 26.2 running under Manjaro 18).
 I've gotten a lot of inspiration for this setup from [magnars/.emacs.d](https://github.com/magnars/.emacs.d), so be sure to check that out too.
 
 
-## Installation
+## System requirements
 
-1. Install the font _Iosevka SS04_, which can be obtained as follows:
+Below is a list of stuff installed on my system that this config assumes to exist, along with the Arch and AUR packages where they can be found
 
-    - Go to <https://github.com/be5invis/Iosevka/releases>
-    - Download `iosevka-ss04-x.x.x.zip`
-    - Unpack and install the fonts in the `ttf/` folder
-
-    NB: If you don't want to use this font, edit the below lines in `settings/set-appearance.el` after the next step:
-
-    ```elisp
-    (set-face-attribute 'default nil
-                        :family "Iosevka SS04"
-                        :height 120)
-    ```
+  * Iosevka SS04 fonts (`ttf-iosevka-ss04` (AUR))
+  * GNU Make (`make`)
+  * ag (`the_silver_searcher`)
+  * R (`r`)
+  * J (`j9-git` (AUR))
+  * Guile Scheme (`guile`)
+  * TeXLive (`texlive-most`)
+  * Haskell Stack (`stack`)
+  * Python (`python`)
 
 
-1. After deleting your old Emacs init file(s):
+## Emacs packages
 
-    ```console
-    mkdir -p ~/.emacs.d
-    cd ~/.emacs.d
-    git clone https://github.com/janusvm/.emacs.d.git .
-    ```
+I use the Github versions of the following packages:
 
-    When you open Emacs after this,
+  * use-package
+  * swiper
+  * telephone-line
+  * j-mode
 
-    - packages are automatically installed from (in order of priority) Melpa Stable, GNU Elpa, Melpa
-    - a pop-up about abbrevs will pause the process, and I have no idea how to get rid of it (but I suspect that `ess` is the culprit)
-    - several warnings about the byte compilation of packages will be displayed (just ignore them)
+and the following packages installed from the package repos listed in [init.el](./init.el):
 
-1. If you don't already have the resource fonts for the package [all-the-icons](https://github.com/domtronn/all-the-icons.el), run the following:
-
-    ```elisp
-    (all-the-icons-install-fonts)
-    ```
-
-    This will install a few truetype fonts and update your font cache, so it might take a little while to finish.
-
-## Notes
-
-I use a couple of non-standard keybindings, rebind some common keys, and unset some entirely.
-Take a look in `settings/set-keybindings.el` to get an overview.
+  * ag
+  * auctex
+  * auctex-latexmk
+  * avy
+  * cider
+  * company
+  * company-auctex
+  * counsel-projectile
+  * diminish
+  * elpy
+  * ess
+  * expand-region
+  * geiser
+  * haskell-mode
+  * ibuffer-projectile
+  * lispy
+  * magit
+  * markdown-mode
+  * multiple-cursors
+  * nord-theme
+  * org
+  * poly-R
+  * poly-markdown
+  * projectile
+  * rainbow-delimiters
+  * rainbow-mode
+  * slime
+  * sql-indent
+  * transpose-frame
+  * wgrep
+  * yaml-mode
