@@ -1,6 +1,11 @@
 ;; set-prog-R.el : settings for programming in R
 ;; -----------------------------------------------------------------------------
 
+(use-package hydra-ess
+  :after ess
+  :bind (:map ess-mode-map
+              ("M-<SPC>" . hydra-ess-main/body)))
+
 (use-package ess-site
   :after (company ess-custom)
   :init
