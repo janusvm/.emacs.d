@@ -1,0 +1,12 @@
+[submodule "site-lisp/telephone-line"]
+	path = site-lisp/telephone-line
+	url = https://github.com/dbordak/telephone-line.git
+[submodule "site-lisp/use-package"]
+	path = site-lisp/use-package
+	url = https://github.com/jwiegley/use-package.git
+[submodule "site-lisp/swiper"]
+	path = site-lisp/swiper
+	url = https://github.com/abo-abo/swiper.git
+[submodule "site-lisp/j-mode"]
+	path = site-lisp/j-mode
+	url = https://github.com/zellio/j-mode.git
