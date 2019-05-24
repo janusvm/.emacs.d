@@ -1,11 +1,10 @@
 ;; def-insert.el : misc functions for inserting characters
 ;; -----------------------------------------------------------------------------
 
-;; Appends a given character to a line until that line is n characters long
-;; Mainly intended for comment headers
-(defun fill-to-end (char n)
-  (interactive "cFill Character:\nnLine length: ")
-  (save-excursion
+(defun fill-to-end (char)
+  "Append `char' to the current line until it is `fill-column' columns wide."
+  (interactive "cFill Character: ")
+  (let ((n fill-column))
     (end-of-line)
     (while (< (current-column) n)
       (insert-char char))))

@@ -1,4 +1,4 @@
-;; set-compile.el : general compilation settings
+;; set-prog-compile.el : general compilation settings
 ;; -----------------------------------------------------------------------------
 
 ;; Scroll compilation output as it renders
@@ -28,5 +28,4 @@
                   (kill-buffer buf)
                   (message "No compilation errors!")))))
 
-
-(provide 'set-compile)
+(provide 'set-prog-compile)

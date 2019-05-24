@@ -1,19 +1,34 @@
-;; set-misc.el : miscellaneous settings
+;; set-edit-misc.el : miscellaneous editing/writing settings
 ;; -----------------------------------------------------------------------------
 
-;; Auto refresh buffers after external changes til file
+;; Undo with C-z
+(global-set-key (kbd "C-z") 'undo)
+
+;; Auto-refresh buffers
 (global-auto-revert-mode t)
 (setq global-auto-revert-non-file-buffers t
       auto-revert-verbose nil)
 
-;; Disable auto save and backup
+;; Disable autosave and backups
 (setq backup-inhibited t
       make-backup-files nil
-      auto-save-default nil)
+      auto-save-default nil
+      auto-save-list-file-prefix nil)
 
-;; I don't use abbrevs
+;; Disable abbrevs
 (setq-default abbrev-mode nil)
 (setq save-abbrevs nil)
+
+;; Always include final newline
+(setq require-final-newline t
+      mode-require-final-newline t)
+
+;; Strip trailing whitespace when saving
+(setq delete-trailing-lines t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; Always use electric pairs
+(electric-pair-mode 1)
 
 ;; Use y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -32,21 +47,10 @@
 ;; toggle with C-\
 (setq default-input-method 'TeX)
 
-;; Show keystrokes in minibuffer faster
-(setq echo-keystrokes 0.1)
-
-;; Disable selecting with Shift
-(setq shift-select-mode nil)
-
-;; Delete text in region when typing
-(delete-selection-mode t)
-
-;; Move files to Rubbish Bin when deleting
-(setq delete-by-moving-to-trash t)
-
-;; Wrap lines at words
-(setq-default truncate-lines nil)
-(setq-default word-wrap t)
+;; Wrap lines at words, and don't double space
+(setq-default truncate-lines nil
+	      word-wrap t
+	      sentence-end-double-space nil)
 
 ;; Don't insert tabs by default
 (setq-default indent-tabs-mode nil)
@@ -55,13 +59,13 @@
 (setq-default fill-column 80)
 (setq fill-column 80)
 
-;; Don't double space after period
-(setq-default sentence-end-double-space nil)
+;; Regex builder
+(use-package re-builder
+  :config (setq reb-re-syntax 'string))
 
-;; Allow editing of compressed files
-(auto-compression-mode t)
+;; Writable grep buffers
+(use-package wgrep
+  :config
+  (setq wgrep-auto-save-buffer t))
 
-;; Set re-builder's syntax to the one other, interactive regexes use
-(setq reb-re-syntax 'string)
-
-(provide 'set-misc)
+(provide 'set-edit-misc)

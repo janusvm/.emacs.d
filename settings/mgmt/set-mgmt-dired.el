@@ -1,4 +1,4 @@
-;; set-dired.el : settings related to dired
+;; set-mgmt-dired.el : settings related to dired
 ;; -----------------------------------------------------------------------------
 
 ;; Set listing switches (args to ls)
@@ -10,4 +10,4 @@
 ;; Use a button for opening file/folder in same buffer
 (put 'dired-find-alternate-file 'disabled nil)
 
-(provide 'set-dired)
+(provide 'set-mgmt-dired)
