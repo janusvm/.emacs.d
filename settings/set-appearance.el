@@ -21,14 +21,11 @@
 ;; Load nord theme with a couple of tweaks
 (use-package nord-theme
   :init
-  (setq nord-region-highlight "snowstorm") ; not yet implemented, apparently
+  (setq nord-region-highlight "frost")
   :config
   (load-theme 'nord t)
   (set-cursor-color "#bf616a")
-  (add-to-list 'default-frame-alist '(cursor-color . "#bf616a"))
-  (set-face-attribute 'region nil
-		      :foreground "#2e3440"
-		      :background "#88c0d0"))
+  (add-to-list 'default-frame-alist '(cursor-color . "#bf616a")))
 
 ;; Modeline
 (use-package telephone-line
