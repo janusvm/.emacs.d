@@ -2,7 +2,8 @@
 ;; -----------------------------------------------------------------------------
 
 (use-package poly-markdown
-  :mode ("\\.md$" . poly-markdown-mode))
+  :mode (("\\.md$"   . poly-markdown-mode)
+         ("\\.[jJ]md$" . poly-markdown-mode)))
 
 (use-package poly-R
   :mode ("\\.Rmd$" . poly-markdown+r-mode))

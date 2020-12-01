@@ -9,4 +9,11 @@
     (while (< (current-column) n)
       (insert-char char))))
 
+(defun yank-rectangle-push-lines ()
+  "https://emacs.stackexchange.com/a/46352"
+  (interactive)
+  (narrow-to-region (point) (mark))
+  (yank-rectangle)
+  (widen))
+
 (provide 'def-insert)

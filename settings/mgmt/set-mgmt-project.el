@@ -6,8 +6,9 @@
   :bind-keymap
   ("C-c p" . projectile-command-map)
   :config
-  (projectile-global-mode t)
-  (setq projectile-completion-system 'ivy))
+  (projectile-mode +1)
+  (setq projectile-completion-system 'ivy
+        projectile-indexing-method 'hybrid))
 
 (use-package counsel-projectile
   :config

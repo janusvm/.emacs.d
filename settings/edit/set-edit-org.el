@@ -5,16 +5,17 @@
   :mode (("\\.org$" . org-mode))
   :hook ((org-mode . org-indent-mode))
   :bind (:map org-mode-map
-              ("C-c a" . org-agenda))
+              ("C-c a" . org-agenda)
+              ("C-'"   . nil))
   :config
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((emacs-lisp . t)
-     (lisp . t)
-     (scheme . t)
-     (R . t)
-     (latex . t)
-     (python . t)))
+     (lisp       . t)
+     (scheme     . t)
+     (R          . t)
+     (latex      . t)
+     (python     . t)))
   (setq org-confirm-babel-evaluate nil))
 
 (use-package ox-latex
@@ -25,10 +26,10 @@
 		\\usepackage{fourier}
 		\\usepackage{inconsolata}
 		\\usepackage[margin=3cm]{geometry}"
-               ("\\section{%s}" . "\\section*{%s}")
-	       ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\section{%s}"       . "\\section*{%s}")
+	       ("\\subsection{%s}"    . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-               ("\\paragraph{%s}" . "\\paragraph*{%s}")
-               ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
+               ("\\paragraph{%s}"     . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}"  . "\\subparagraph*{%s}"))))
 
 (provide 'set-edit-org)

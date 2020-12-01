@@ -68,6 +68,7 @@
 (use-package set-prog-haskell)
 (use-package set-prog-python)
 (use-package set-prog-sql)
+(use-package set-prog-rust)
 (use-package set-prog-compile)
 
 ;; Custom functions

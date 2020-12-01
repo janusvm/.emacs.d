@@ -2,7 +2,8 @@
 ;; -----------------------------------------------------------------------------
 
 (use-package tex
-  :mode ("\\.tex" . LaTeX-mode)
+  :mode (("\\.tex$"  . LaTeX-mode)
+         ("\\.tikz$" . LaTeX-mode))
   :hook ((LaTeX-mode . LaTeX-math-mode)
          (LaTeX-mode . turn-on-reftex)
          (LaTeX-mode . TeX-source-correlate-mode)

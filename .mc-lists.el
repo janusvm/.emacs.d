@@ -4,16 +4,27 @@
 (setq mc/cmds-to-run-for-all
       '(
         LaTeX-babel-insert-hyphen
+        LaTeX-insert-left-brace
+        LaTeX-math-nu
+        LaTeX-math-tau
+        TeX-insert-backslash
+        TeX-insert-dollar
+        TeX-insert-sub-or-superscript
+        TeX-newline
         archive-mark
+        bibtex-find-text
         comment-line
         comment-set-column
         copy-to-register
         electric-pair-delete-pair
+        ess-indent-new-comment-line
         ess-indent-or-complete
+        ess-insert-assign
         ess-smart-S-assign
         ess-smart-comma
         ess-yank
         haskell-indentation-common-electric-command
+        haskell-indentation-newline-and-indent
         indent-for-tab-command
         ivy-occur-delete-candidate
         kill-region
@@ -30,9 +41,13 @@
         lispy-move-end-of-line
         lispy-parens
         lispy-quotes
+        lispy-space
         lispy-tick
         markdown-cycle
+        markdown-enter-key
+        markdown-insert-list-item
         markdown-outdent-or-delete
+        my/R-pipe-op
         org-delete-char
         org-end-of-line
         org-self-insert-command
@@ -111,11 +126,16 @@
         special-lispy-x
         special-pop-tag-mark
         special-swiper
+        wdired-downcase-word
+        yaml-electric-backspace
+        yaml-electric-dash-and-dot
         ))
 
 (setq mc/cmds-to-run-once
       '(
         avy-goto-line
+        avy-goto-word-1
+        counsel-M-x
         iedit-switch-to-mc-mode
         ivy-done
         lispy-cursor-down

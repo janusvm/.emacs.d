@@ -4,7 +4,7 @@
 (use-package company
   :diminish company-mode
   :bind (([remap completion-at-point] . company-complete)
-         ([remap complete-symbol] . company-complete))
+         ([remap complete-symbol]     . company-complete))
   :config
   (setq company-idle-delay 0
         company-show-numbers t
